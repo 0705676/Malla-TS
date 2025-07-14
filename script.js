@@ -54,3 +54,18 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+// Mostrar frase motivadora
+      const frases = [
+        "¡Bien hecho! Otro paso hacia tu título 🎓",
+        "¡Excelente trabajo, sigue así! 💪",
+        "¡Un ramo menos, un sueño más cerca! 💼",
+        "¡Estás construyendo tu futuro! 🚀",
+        "¡Cada clic es una victoria! 🧠",
+        "¡Orgullo trabajador/a social en formación! ❤️",
+        "¡Ya casi llegas, no te detengas! 🏁",
+        "¡Tu esfuerzo está dando frutos! 🌱",
+        "¡Vamos que se puede! 🙌",
+        "¡Eres inspiración! ✨"
+      ];
+      const frase = frases[Math.floor(Math.random() * frases.length)];
+      alert(frase);
