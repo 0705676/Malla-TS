@@ -54,10 +54,11 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
-document.getElementById("reiniciar").addEventListener("click", () => {
+// Función para reiniciar completamente la malla
+function reiniciarMalla() {
   materias.forEach(m => {
     const div = document.getElementById(m.id);
-    div.className = "materia"; // limpia clases anteriores
+    div.className = "materia"; // Limpia todas las clases anteriores
 
     if (m.prerequisitos) {
       div.classList.add("bloqueada");
@@ -65,4 +66,7 @@ document.getElementById("reiniciar").addEventListener("click", () => {
       div.classList.add("desbloqueada");
     }
   });
-});
+}
+
+// Evento del botón
+document.getElementById("reiniciar").addEventListener("click", reiniciarMalla);
