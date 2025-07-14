@@ -69,3 +69,18 @@ footer {
   font-size: 14px;
   color: #777;
 }
+#reiniciar {
+  margin: 10px auto 20px;
+  padding: 10px 20px;
+  font-size: 14px;
+  background-color: #a00;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#reiniciar:hover {
+  background-color: #c62828;
+}
