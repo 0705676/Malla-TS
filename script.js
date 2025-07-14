@@ -54,3 +54,15 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+document.getElementById("reiniciar").addEventListener("click", () => {
+  materias.forEach(m => {
+    const div = document.getElementById(m.id);
+    div.className = "materia"; // limpia clases anteriores
+
+    if (m.prerequisitos) {
+      div.classList.add("bloqueada");
+    } else {
+      div.classList.add("desbloqueada");
+    }
+  });
+});
