@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Malla Interactiva - Trabajo Social</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+  <h1>Malla Interactiva - Trabajo Social</h1>
+  <div id="malla" class="malla-container">
+
+    <!-- I Semestre -->
+    <div class="semestre">
+      <h2>I Semestre</h2>
+      <button class="ramo" data-nombre="matematicas" data-desbloquea="estadistica1">Matemáticas</button>
+      <button class="ramo" data-nombre="bases_sociologicas" data-desbloquea="antropologia">Bases Sociológicas</button>
+      <button class="ramo" data-nombre="fundamentos" data-desbloquea="ts_disciplina">Fundamentos del Trabajo Social</button>
+      <button class="ramo" data-nombre="expresion">Expresión Oral y Escrita</button>
+      <button class="ramo" data-nombre="autodesarrollo">Autodesarrollo</button>
+    </div>
+
+    <!-- II Semestre -->
+    <div class="semestre">
+      <h2>II Semestre</h2>
+      <button class="ramo bloqueado" data-nombre="estadistica1" data-desbloquea="estadistica2,estudios_poblacion">Estadística I</button>
+      <button class="ramo" data-nombre="epistemologia" data-desbloquea="investigacion1">Epistemología de las Ciencias Sociales</button>
+      <button class="ramo bloqueado" data-nombre="ts_disciplina" data-desbloquea="metodos_intervencion">Trabajo Social como Disciplina y Profesión</button>
+      <button class="ramo bloqueado" data-nombre="antropologia">Antropología Social</button>
+      <button class="ramo" data-nombre="psicologia" data-desbloquea="psicologia_social">Psicología General</button>
+      <button class="ramo" data-nombre="informatica">Informática Básica</button>
+    </div>
+
+    <!-- III Semestre -->
+    <div class="semestre">
+      <h2>III Semestre</h2>
+      <button class="ramo bloqueado" data-nombre="estadistica2" data-desbloquea="investigacion2">Estadística II</button>
+      <button class="ramo bloqueado" data-nombre="investigacion1" data-desbloquea="investigacion2">Investigación Social I</button>
+      <button class="ramo bloqueado" data-nombre="metodos_intervencion" data-desbloquea="ts_grupos,planificacion_social">Métodos de Intervención Profesional</button>
+      <button class="ramo" data-nombre="ecologia">Ecología Humana</button>
+      <button class="ramo bloqueado" data-nombre="psicologia_social">Psicología Social</button>
+      <button class="ramo" data-nombre="teoria_sociopolitica">Teoría Socio-política</button>
+    </div>
+
+    <!-- IV Semestre -->
+    <div class="semestre">
+      <h2>IV Semestre</h2>
+      <button class="ramo" data-nombre="comunicacion">Comunicación</button>
+      <button class="ramo bloqueado" data-nombre="estudios_poblacion" data-desbloquea="indicadores">Estudios de Población</button>
+      <button class="ramo bloqueado" data-nombre="ts_grupos" data-desbloquea="ts_comunitario">Trabajo Social con Grupo</button>
+      <button class="ramo" data-nombre="tecnicas_grupales">Técnicas Grupales</button>
+      <button class="ramo" data-nombre="economia_politica" data-desbloquea="estado_politica">Economía Política</button>
+      <button class="ramo" data-nombre="historia_venezuela">Historia Contemporánea de Venezuela</button>
+    </div>
+
+    <!-- V Semestre -->
+    <div class="semestre">
+      <h2>V Semestre</h2>
+      <button class="ramo bloqueado" data-nombre="investigacion2" data-desbloquea="investigacion3">Investigación Social II</button>
+      <button class="ramo" data-nombre="legislacion">Legislación Social</button>
+      <button class="ramo bloqueado" data-nombre="ts_comunitario" data-desbloquea="practica1">Trabajo Social en el Ámbito Comunitario</button>
+      <button class="ramo bloqueado" data-nombre="planificacion_social" data-desbloquea="formulacion,indicadores">Planificación Social</button>
+      <button class="ramo bloqueado" data-nombre="estado_politica" data-desbloquea="administracion,seguridad_social">Estado y Política Social</button>
+      <button class="ramo" data-nombre="ingles">Inglés</button>
+    </div>
+
+    <!-- VI Semestre -->
+    <div class="semestre">
+      <h2>VI Semestre</h2>
+      <button class="ramo bloqueado" data-nombre="investigacion3" data-desbloquea="computacion_aplicada">Investigación Social III</button>
+      <button class="ramo bloqueado" data-nombre="administracion" data-desbloquea="practica1">Administración y Gerencia Social</button>
+      <button class="ramo" data-nombre="ts_individuo_familia" data-desbloquea="orientacion_familiar">Trabajo Social con Individuo y Familia</button>
+      <button class="ramo bloqueado" data-nombre="formulacion">Formulación y Evaluación de Proyectos Sociales</button>
+      <button class="ramo bloqueado" data-nombre="indicadores">Indicadores Sociales</button>
+      <button class="ramo" data-nombre="electiva1">Electiva I</button>
+    </div>
+
+    <!-- VII Semestre -->
+    <div class="semestre">
+      <h2>VII Semestre</h2>
+      <button class="ramo bloqueado" data-nombre="practica1" data-desbloquea="practica2">Prácticas de Trabajo Social I</button>
+      <button class="ramo bloqueado" data-nombre="seguridad_social">Seguridad Social</button>
+      <button class="ramo" data-nombre="electiva2">Electiva II</button>
+    </div>
+
+    <!-- VIII Semestre -->
+    <div class="semestre">
+      <h2>VIII Semestre</h2>
+      <button class="ramo bloqueado" data-nombre="computacion_aplicada">Computación Aplicada a las Ciencias Sociales</button>
+      <button class="ramo bloqueado" data-nombre="practica2" data-desbloquea="practica3">Prácticas de Trabajo Social II</button>
+      <button class="ramo bloqueado" data-nombre="orientacion_familiar" data-desbloquea="practica3">Orientación Familiar</button>
+    </div>
+
+    <!-- IX Semestre -->
+    <div class="semestre">
+      <h2>IX Semestre</h2>
+      <button class="ramo bloqueado" data-nombre="practica3">Prácticas de Trabajo Social III</button>
+    </div>
+
+    <!-- X Semestre -->
+    <div class="semestre">
+      <h2>X Semestre</h2>
+      <button class="ramo" data-nombre="trabajo_grado">Trabajo de Grado</button>
+      <button class="ramo" data-nombre="servicio_comunitario">Seminario Servicio Comunitario</button>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>Desarrollado por Gabriela Brito</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
