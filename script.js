@@ -54,17 +54,3 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
-// 6. Reiniciar la malla (botón)
-function reiniciarMalla() {
-  materias.forEach(m => {
-    const div = document.getElementById(m.id);
-    div.className = "materia";
-    if (m.prerequisitos) {
-      div.classList.add("bloqueada");
-    } else {
-      div.classList.add("desbloqueada");
-    }
-  });
-}
-
-document.getElementById("reiniciar").addEventListener("click", reiniciarMalla);
